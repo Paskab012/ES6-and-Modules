@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(36, 36, 36);
+  align-items: center;
+  padding: 8px;
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.nav h1 {
+  border: none;
+  font-size: 28px;
+  padding: 1%;
+}
+
+.nav ul {
+  display: flex;
+  width: 40%;
+}
+
+.nav ul li {
+  list-style-type: none;
+  width: 20%;
+  border-right: 1px solid black;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+h2 {
+  margin: 15px;
+}
+
+.section1,
+.section3 {
+  height: 63vh;
+  overflow-y: hidden;
+}
+
+.books-wrapper {
+  list-style: none;
+  width: 70vw;
+}
+
+.display {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+
+.remove {
+  text-align: center;
+  padding: 2px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.books-wrapper li:nth-child(odd) {
+  background-color: #999;
+  color: #000;
+}
+
+.section2 {
+  margin-top: 7%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.books-wrapper,
+.add-btn,
+input,
+.remove {
+  border: 2px solid rgb(54, 54, 54);
+  text-transform: capitalize;
+}
+
+form input {
+  width: 50vw;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+form button {
+  width: 90px;
+}
+
+.separator {
+  width: 300px;
+  border: 1px solid rgb(37, 37, 37);
+  display: block;
+  margin: 15px 0;
+}
+
+.short {
+  width: 100px;
+}
+
+.add-btn {
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  left: 43.5vw;
+}
+
+.footer {
+  border: 1px solid rgb(54, 54, 54);
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  bottom: 2%;
+  left: 4%;
+  width: 90%;
+}
+
+.hide {
+  display: none;
+}
+
+.nav ul .current {
+  background-color: rgb(27, 27, 27);
+  color: #fff;
+  border: 0.7px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  width: 100%;
+  height: 39px;
+}
+
+.nav ul .current a {
+  color: #fff;
+  padding: 8px;
+}
+
+#date-area {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 5% 0 0;
+}
+
+.nav ul .nope {
+  border-right: none;
+}
